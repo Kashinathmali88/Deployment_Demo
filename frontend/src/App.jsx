@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
   const url = import.meta.env.VITE_BACKEND_URL;
-  const [data, setData] = useState(null);
+  const [data, setData] = useState("");
 
   useEffect(() => {
     const fatchData = async () => {
