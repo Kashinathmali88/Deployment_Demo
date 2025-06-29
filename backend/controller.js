@@ -3,6 +3,8 @@ import UserModel from "./model.js";
 const get = async (req, res) => {
   const name = "Emile";
   const user = await UserModel.findOne({ name });
+  console.log(user);
+
   res.json({ success: true, message: user });
 };
 

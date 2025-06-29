@@ -11,7 +11,7 @@ function App() {
     const fatchData = async () => {
       try {
         await axios.get(`${url}/me`).then((res) => {
-          setData(res.data.message);
+          setData(res.data.message.name);
         });
       } catch (error) {
         console.log(error);
